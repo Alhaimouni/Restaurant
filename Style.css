@@ -1,0 +1,124 @@
+body {
+    background-image: url(https://images.unsplash.com/photo-1633504498295-50aa936d57bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fG1lbnV8ZW58MHx8MHx8&w=1000&q=80);
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-attachment: fixed;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    
+    
+    
+}
+
+
+
+.nav {
+    
+    background-color: rgba(29, 28, 28, 0.782);
+    
+    min-width: 1520px;
+    max-width: 1520px;
+    height: fit-content;
+    padding: 10px;
+    text-align: center;
+    font-size: xx-large ;
+    text-shadow: 2px 0 5px rgb(255, 255, 255);
+    margin-left: -10px;
+    border: 1px dashed rgba(255, 255, 255, 0.653);
+    margin-top: -10px;
+    
+}
+
+.anc {
+
+    text-decoration: none;
+    font-size: xx-large;
+    background-color: rgba(126, 99, 99, 0.259);
+    padding: 0px 30px;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    font-size: medium;
+}
+
+.foot {
+    
+    background-color: rgba(29, 28, 28, 0.782);
+    position: relative ;
+    top: 250px;
+    left: -15px;
+    min-width: 1520px;
+    max-width: 1520px;
+    min-height: 100px;  
+    padding: 15px 10px;
+    border: 1px dashed rgba(255, 255, 255, 0.653);
+}
+
+#p1 {
+    width: 1200px;
+    padding: 50px 0px;
+}
+
+#fd1 {
+    position: absolute;
+    left: 15px;
+    bottom: 60px;
+}
+
+#fd2 {
+    position: absolute;
+    left: 10px;
+    bottom: 30px;
+}
+
+#fd3 {
+    position: absolute;
+    left: 1350px;
+    bottom: 30px;
+}
+
+#sm {
+
+    padding: 20px;
+    font-size: large;
+    position: relative;
+    top: 30px;
+    background-color:rgb(219,216,209);
+    color: rgba(141, 59, 59, 1);
+    border-style: groove ;
+    border-radius: 5px;
+}
+
+#tPlace {
+position: relative;
+    padding:5px;
+    left: 300px;
+bottom: 700px;
+}
+
+.table {
+    background-color: rgb(219,216,209);
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 315px;
+    right: 100px;
+}
+
+
+thead ,tr,td {
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    color: rgba(141, 59, 59, 0.842);
+}
+
+.orTh {
+    padding: 10px 50px;
+    border: 2px dashed rgb(61,62,60);
+}
+
