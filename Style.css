@@ -5,9 +5,6 @@ body {
     background-attachment: fixed;
     color: rgb(255, 255, 255);
     font-size: 25px;
-    
-    
-    
 }
 
 
@@ -15,9 +12,6 @@ body {
 .nav {
     
     background-color: rgba(29, 28, 28, 0.782);
-    
-    min-width: 1520px;
-    max-width: 1520px;
     height: fit-content;
     padding: 10px;
     text-align: center;
@@ -43,11 +37,7 @@ body {
 .foot {
     
     background-color: rgba(29, 28, 28, 0.782);
-    position: relative ;
-    top: 250px;
-    left: -15px;
-    min-width: 1520px;
-    max-width: 1520px;
+    position: static;
     min-height: 100px;  
     padding: 15px 10px;
     border: 1px dashed rgba(255, 255, 255, 0.653);
@@ -56,24 +46,6 @@ body {
 #p1 {
     width: 1200px;
     padding: 50px 0px;
-}
-
-#fd1 {
-    position: absolute;
-    left: 15px;
-    bottom: 60px;
-}
-
-#fd2 {
-    position: absolute;
-    left: 10px;
-    bottom: 30px;
-}
-
-#fd3 {
-    position: absolute;
-    left: 1350px;
-    bottom: 30px;
 }
 
 #sm {
@@ -122,3 +94,9 @@ thead ,tr,td {
     border: 2px dashed rgb(61,62,60);
 }
 
+#name,#price {
+    padding: 15px;
+    border-radius: 3px;
+    background-color: antiquewhite;
+    border: 1px dashed black;
+}
