@@ -48,7 +48,7 @@ body {
     padding: 50px 0px;
 }
 
-#sm {
+.sm {
 
     padding: 20px;
     font-size: large;
@@ -61,10 +61,10 @@ body {
 }
 
 #tPlace {
-position: relative;
+position: absolute;
     padding:5px;
-    left: 300px;
-bottom: 700px;
+    left: 900px;
+top: 100px;
 }
 
 .table {
