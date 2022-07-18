@@ -32,8 +32,6 @@ Dish.prototype.render = function() {
     x.appendChild(tableRow);
 }
 
-
-
 let newDish = document.getElementById("form")
 
 newDish.addEventListener("submit",doSubmit)
@@ -43,6 +41,18 @@ event.preventDefault();
 let name = event.target.name.value;
 let type = checks();
 let price = event.target.price.value;
+
+let food = new Dish(createId(),name,type,price);
+food.render();
+saveData();
+
+
+function saveData() {
+    
+    let srtngf = JSON.stringify(allDishes);
+    localStorage.setItem("allData" , srtngf);
+   
+}
 
 function createId() {
     if(name==false)
@@ -54,17 +64,34 @@ function createId() {
     }
     
 }
-
 function checks() {
 
     if (event.target.fv.checked) {return "Fruit and Vegetble"};
     if (event.target.sf.checked) {return "Starchy food"};
     if (event.target.df.checked) {return "Diary food"};
     if (event.target.protein.checked) {return "Protein food"};
+}}
+
+
+
+function getData() {
+    let data = localStorage.getItem("allData");
+    let newData = JSON.parse(data);
+    if (newData != null) {
+
+    
+    for(let i =0 ; i<newData.length ; i++){
+
+     let  k = new Dish(newData[i].id,newData[i].name,newData[i].type,newData[i].price);
+        
+     k.render();
+    }
+}
+    
+    
+    
+    
+    
 }
 
-
-let food = new Dish(createId(),name,type,price);
-food.render();
-
-}
+getData();
