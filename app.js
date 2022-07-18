@@ -15,21 +15,21 @@ function Dish(id,name,type,price) {
 
 Dish.prototype.render = function() {
 
-    let x = document.getElementById("tbody");
-    let tableRow = document.createElement("tr");
-    let tableData1 = document.createElement("td");
-    let tableData2 = document.createElement("td");
-    let tableData3 = document.createElement("td");
-    let tableData4 = document.createElement("td");
-    tableData1.textContent = this.id;
-    tableData2.textContent = this.name;
-    tableData3.textContent = this.type;
-    tableData4.textContent = this.price;
-    tableRow.appendChild(tableData1);
-    tableRow.appendChild(tableData2);
-    tableRow.appendChild(tableData3);
-    tableRow.appendChild(tableData4);
-    x.appendChild(tableRow);
+    // let x = document.getElementById("tbody");
+    // let tableRow = document.createElement("tr");
+    // let tableData1 = document.createElement("td");
+    // let tableData2 = document.createElement("td");
+    // let tableData3 = document.createElement("td");
+    // let tableData4 = document.createElement("td");
+    // tableData1.textContent = this.id;
+    // tableData2.textContent = this.name;
+    // tableData3.textContent = this.type;
+    // tableData4.textContent = this.price;
+    // tableRow.appendChild(tableData1);
+    // tableRow.appendChild(tableData2);
+    // tableRow.appendChild(tableData3);
+    // tableRow.appendChild(tableData4);
+    // x.appendChild(tableRow);
 }
 
 let newDish = document.getElementById("form")
@@ -74,24 +74,24 @@ function checks() {
 
 
 
-function getData() {
-    let data = localStorage.getItem("allData");
-    let newData = JSON.parse(data);
-    if (newData != null) {
+// function getData() {
+//     let data = localStorage.getItem("allData");
+//     let newData = JSON.parse(data);
+//     if (newData != null) {
 
     
-    for(let i =0 ; i<newData.length ; i++){
+//     for(let i =0 ; i<newData.length ; i++){
 
-     let  k = new Dish(newData[i].id,newData[i].name,newData[i].type,newData[i].price);
+//      let  k = new Dish(newData[i].id,newData[i].name,newData[i].type,newData[i].price);
         
-     k.render();
-    }
-}
+//      k.render();
+//     }
+// }
     
     
     
     
     
-}
+// }
 
-getData();
+// getData();
